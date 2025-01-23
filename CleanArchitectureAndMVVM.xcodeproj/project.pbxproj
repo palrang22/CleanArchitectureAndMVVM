@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		36C47C82544B39E7F618B72E /* Pods_CleanArchitectureAndMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E54719E268021A1154B2F0C /* Pods_CleanArchitectureAndMVVM.framework */; };
+		7DDF3C79EF721F05978EB91F /* Pods_CleanArchitectureAndMVVM_CleanArchitectureAndMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9D68196CBE59FB393373D2 /* Pods_CleanArchitectureAndMVVM_CleanArchitectureAndMVVMUITests.framework */; };
+		A89CC76447BBF95BBC88A07F /* Pods_CleanArchitectureAndMVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658008A3ABD3E9334C0CDCD1 /* Pods_CleanArchitectureAndMVVMTests.framework */; };
+		CC8F687F2D42237A006C7208 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CC8F687E2D42237A006C7208 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CC8F67E42D41E8FD006C7208 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +31,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06578E9E79A5B9CC60658827 /* Pods-CleanArchitectureAndMVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureAndMVVMTests.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureAndMVVMTests/Pods-CleanArchitectureAndMVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B42ED7EEBA60A5E9B0488F4 /* Pods-CleanArchitectureAndMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureAndMVVMTests.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureAndMVVMTests/Pods-CleanArchitectureAndMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E54719E268021A1154B2F0C /* Pods_CleanArchitectureAndMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitectureAndMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF3805C89A5B7B4DBB91C58 /* Pods-CleanArchitectureAndMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureAndMVVM.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureAndMVVM/Pods-CleanArchitectureAndMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		658008A3ABD3E9334C0CDCD1 /* Pods_CleanArchitectureAndMVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitectureAndMVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F9D68196CBE59FB393373D2 /* Pods_CleanArchitectureAndMVVM_CleanArchitectureAndMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitectureAndMVVM_CleanArchitectureAndMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E1015033F848427D990774 /* Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC8F67CA2D41E8FA006C7208 /* CleanArchitectureAndMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureAndMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8F67E32D41E8FD006C7208 /* CleanArchitectureAndMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureAndMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8F67ED2D41E8FD006C7208 /* CleanArchitectureAndMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureAndMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8F687E2D42237A006C7208 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DD6D73DFE71B377FE5BCC36A /* Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD3477E2DE59D6E2D5E0DF3C /* Pods-CleanArchitectureAndMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureAndMVVM.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureAndMVVM/Pods-CleanArchitectureAndMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C47C82544B39E7F618B72E /* Pods_CleanArchitectureAndMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89CC76447BBF95BBC88A07F /* Pods_CleanArchitectureAndMVVMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,19 +98,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDF3C79EF721F05978EB91F /* Pods_CleanArchitectureAndMVVM_CleanArchitectureAndMVVMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		149648CF7E24C95A33D00DC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CF3805C89A5B7B4DBB91C58 /* Pods-CleanArchitectureAndMVVM.debug.xcconfig */,
+				FD3477E2DE59D6E2D5E0DF3C /* Pods-CleanArchitectureAndMVVM.release.xcconfig */,
+				71E1015033F848427D990774 /* Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.debug.xcconfig */,
+				DD6D73DFE71B377FE5BCC36A /* Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.release.xcconfig */,
+				06578E9E79A5B9CC60658827 /* Pods-CleanArchitectureAndMVVMTests.debug.xcconfig */,
+				1B42ED7EEBA60A5E9B0488F4 /* Pods-CleanArchitectureAndMVVMTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		95E1A8515991D6A482841683 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E54719E268021A1154B2F0C /* Pods_CleanArchitectureAndMVVM.framework */,
+				6F9D68196CBE59FB393373D2 /* Pods_CleanArchitectureAndMVVM_CleanArchitectureAndMVVMUITests.framework */,
+				658008A3ABD3E9334C0CDCD1 /* Pods_CleanArchitectureAndMVVMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC8F67C12D41E8FA006C7208 = {
 			isa = PBXGroup;
 			children = (
+				CC8F687E2D42237A006C7208 /* .gitignore */,
 				CC8F67CC2D41E8FA006C7208 /* CleanArchitectureAndMVVM */,
 				CC8F67E62D41E8FD006C7208 /* CleanArchitectureAndMVVMTests */,
 				CC8F67F02D41E8FD006C7208 /* CleanArchitectureAndMVVMUITests */,
 				CC8F67CB2D41E8FA006C7208 /* Products */,
+				149648CF7E24C95A33D00DC3 /* Pods */,
+				95E1A8515991D6A482841683 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC8F67F62D41E8FD006C7208 /* Build configuration list for PBXNativeTarget "CleanArchitectureAndMVVM" */;
 			buildPhases = (
+				5549DECD0DC69811C1544188 /* [CP] Check Pods Manifest.lock */,
 				CC8F67C62D41E8FA006C7208 /* Sources */,
 				CC8F67C72D41E8FA006C7208 /* Frameworks */,
 				CC8F67C82D41E8FA006C7208 /* Resources */,
+				CE3F72162F063CF2CFD789FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +172,6 @@
 				CC8F67CC2D41E8FA006C7208 /* CleanArchitectureAndMVVM */,
 			);
 			name = CleanArchitectureAndMVVM;
-			packageProductDependencies = (
-			);
 			productName = CleanArchitectureAndMVVM;
 			productReference = CC8F67CA2D41E8FA006C7208 /* CleanArchitectureAndMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC8F67FB2D41E8FD006C7208 /* Build configuration list for PBXNativeTarget "CleanArchitectureAndMVVMTests" */;
 			buildPhases = (
+				E8EBF850E06F1EC51A805254 /* [CP] Check Pods Manifest.lock */,
 				CC8F67DF2D41E8FD006C7208 /* Sources */,
 				CC8F67E02D41E8FD006C7208 /* Frameworks */,
 				CC8F67E12D41E8FD006C7208 /* Resources */,
@@ -147,8 +194,6 @@
 				CC8F67E62D41E8FD006C7208 /* CleanArchitectureAndMVVMTests */,
 			);
 			name = CleanArchitectureAndMVVMTests;
-			packageProductDependencies = (
-			);
 			productName = CleanArchitectureAndMVVMTests;
 			productReference = CC8F67E32D41E8FD006C7208 /* CleanArchitectureAndMVVMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC8F67FE2D41E8FD006C7208 /* Build configuration list for PBXNativeTarget "CleanArchitectureAndMVVMUITests" */;
 			buildPhases = (
+				1B78AB9FCE95549FED514942 /* [CP] Check Pods Manifest.lock */,
 				CC8F67E92D41E8FD006C7208 /* Sources */,
 				CC8F67EA2D41E8FD006C7208 /* Frameworks */,
 				CC8F67EB2D41E8FD006C7208 /* Resources */,
+				B7A7B2510D2539F1A648FF5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,8 +217,6 @@
 				CC8F67F02D41E8FD006C7208 /* CleanArchitectureAndMVVMUITests */,
 			);
 			name = CleanArchitectureAndMVVMUITests;
-			packageProductDependencies = (
-			);
 			productName = CleanArchitectureAndMVVMUITests;
 			productReference = CC8F67ED2D41E8FD006C7208 /* CleanArchitectureAndMVVMUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -225,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8F687F2D42237A006C7208 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +289,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B78AB9FCE95549FED514942 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5549DECD0DC69811C1544188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanArchitectureAndMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7A7B2510D2539F1A648FF5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE3F72162F063CF2CFD789FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArchitectureAndMVVM/Pods-CleanArchitectureAndMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArchitectureAndMVVM/Pods-CleanArchitectureAndMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanArchitectureAndMVVM/Pods-CleanArchitectureAndMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8EBF850E06F1EC51A805254 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanArchitectureAndMVVMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC8F67C62D41E8FA006C7208 /* Sources */ = {
@@ -284,6 +433,7 @@
 /* Begin XCBuildConfiguration section */
 		CC8F67F72D41E8FD006C7208 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF3805C89A5B7B4DBB91C58 /* Pods-CleanArchitectureAndMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +464,7 @@
 		};
 		CC8F67F82D41E8FD006C7208 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3477E2DE59D6E2D5E0DF3C /* Pods-CleanArchitectureAndMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,6 +614,7 @@
 		};
 		CC8F67FC2D41E8FD006C7208 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06578E9E79A5B9CC60658827 /* Pods-CleanArchitectureAndMVVMTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +634,7 @@
 		};
 		CC8F67FD2D41E8FD006C7208 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B42ED7EEBA60A5E9B0488F4 /* Pods-CleanArchitectureAndMVVMTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +654,7 @@
 		};
 		CC8F67FF2D41E8FD006C7208 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E1015033F848427D990774 /* Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -518,6 +672,7 @@
 		};
 		CC8F68002D41E8FD006C7208 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6D73DFE71B377FE5BCC36A /* Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
