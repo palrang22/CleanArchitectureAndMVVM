@@ -11,6 +11,7 @@
 		7DDF3C79EF721F05978EB91F /* Pods_CleanArchitectureAndMVVM_CleanArchitectureAndMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9D68196CBE59FB393373D2 /* Pods_CleanArchitectureAndMVVM_CleanArchitectureAndMVVMUITests.framework */; };
 		A89CC76447BBF95BBC88A07F /* Pods_CleanArchitectureAndMVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658008A3ABD3E9334C0CDCD1 /* Pods_CleanArchitectureAndMVVMTests.framework */; };
 		CC8F687F2D42237A006C7208 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CC8F687E2D42237A006C7208 /* .gitignore */; };
+		CC8F68852D432237006C7208 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CC8F68842D432237006C7208 /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		CC8F67E32D41E8FD006C7208 /* CleanArchitectureAndMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureAndMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8F67ED2D41E8FD006C7208 /* CleanArchitectureAndMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureAndMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8F687E2D42237A006C7208 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CC8F68842D432237006C7208 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		DD6D73DFE71B377FE5BCC36A /* Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests/Pods-CleanArchitectureAndMVVM-CleanArchitectureAndMVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FD3477E2DE59D6E2D5E0DF3C /* Pods-CleanArchitectureAndMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureAndMVVM.release.xcconfig"; path = "Target Support Files/Pods-CleanArchitectureAndMVVM/Pods-CleanArchitectureAndMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 		CC8F67C12D41E8FA006C7208 = {
 			isa = PBXGroup;
 			children = (
+				CC8F68842D432237006C7208 /* Config.xcconfig */,
 				CC8F687E2D42237A006C7208 /* .gitignore */,
 				CC8F67CC2D41E8FA006C7208 /* CleanArchitectureAndMVVM */,
 				CC8F67E62D41E8FD006C7208 /* CleanArchitectureAndMVVMTests */,
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8F68852D432237006C7208 /* Config.xcconfig in Resources */,
 				CC8F687F2D42237A006C7208 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +499,7 @@
 		};
 		CC8F67F92D41E8FD006C7208 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8F68842D432237006C7208 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -530,7 +535,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -558,6 +563,7 @@
 		};
 		CC8F67FA2D41E8FD006C7208 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8F68842D432237006C7208 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -593,7 +599,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
