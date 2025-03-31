@@ -14,8 +14,11 @@ public protocol UserListUsecaseProtocol {
     func saveFavoriteUser(user: UserListItem) -> Result<Bool, CoredataError> //coredata이므로 async 필요 x
     func deleteFavoriteUser(userID: Int) -> Result<Bool, CoredataError>
     
-    // 배열 -> Dictionary [초성: [유저리스트]]
     // 유저리스트 -> 즐겨찾기 포함된 유저인지
+    func checkFavoriteState(fetchUsers: [UserListItem], favoriteUsers: [UserListItem]) -> [(user: UserListItem, isFavorite: Bool)]
+    
+    // 배열 -> Dictionary [초성: [유저리스트]]
+    func convertListToDictionary(favoriteUsers: [UserListItem]) -> [String: [UserListItem]]
     
 }
 
@@ -46,5 +49,23 @@ public struct UserListUsecase: UserListUsecaseProtocol {
         repository.deleteFavoriteUser(userID: userID)
     }
     
+    public func checkFavoriteState(fetchUsers: [UserListItem], favoriteUsers: [UserListItem]) -> [(user: UserListItem, isFavorite: Bool)] {
+        let favoriteSet = Set(favoriteUsers)
+        return fetchUsers.map { user in
+            if favoriteSet.contains(user){
+                return (user: user, isFavorite: true)
+            } else {
+                return (user: user, isFavorite: false)
+            }
+        }
+    }
     
+    public func convertListToDictionary(favoriteUsers: [UserListItem]) -> [String : [UserListItem]] {
+        return favoriteUsers.reduce(into: [String: [UserListItem]]()) { dict, user in
+            if let firstString = user.login.first {
+                let key = String(firstString).uppercased()
+                dict[key, default: []].append(user)
+            }
+        }
+    }
 }
