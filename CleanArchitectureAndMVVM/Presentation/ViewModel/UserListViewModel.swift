@@ -21,6 +21,7 @@ public final class UserListViewModel: UserListViewModelProtocol {
     private let fetchUserList = BehaviorRelay<[UserListItem]>(value: [])
     private let allFavoriteUserList = BehaviorRelay<[UserListItem]>(value: []) // fetchUser 즐겨찾기 여부를 위한 전체 목록
     private let favoriteUserList = BehaviorRelay<[UserListItem]>(value: []) // 목록에 보여줄 리스트
+    private var page: Int = 1
     
     public init(usecase: UserListUsecaseProtocol) {
         self.usecase = usecase
@@ -40,14 +41,14 @@ public final class UserListViewModel: UserListViewModelProtocol {
     }
     
     public func transform(input: Input) -> Output {
-        input.query.bind { [weak self ] query in
+        input.query.bind { [ weak self ] query in
             //TODO: 상황에 맞춰서 user fetch 또는 get favorite users
-            guard let isValidate = self?.validateQuery(query: query), isValidate else {
+            guard let self, validateQuery(query: query) else {
                 self?.getFavoriteUser(query: "")
                 return
             }
-            self?.fetchUser(query: query, page: 0)
-            self?.getFavoriteUser(query: query)
+            self.fetchUser(query: query, page: page)
+            self.getFavoriteUser(query: query)
         }.disposed(by: disposeBag)
         
         input.saveFavorite
@@ -71,26 +72,51 @@ public final class UserListViewModel: UserListViewModelProtocol {
             self?.deleteFavoriteUser(userID: userID, query: query)
         }.disposed(by: disposeBag)
         
-        input .fetchMore.bind {
-            
-        }.disposed(by: disposeBag)
-        
+        input.fetchMore
+            .withLatestFrom(input.query) // 위에꺼랑 다르게 응답값이 없으면 이런식으로 씀
+            .bind { [weak self] query in
+                guard let self else { return }
+                self.page += 1
+                self.fetchUser(query: query, page: page)
+            }.disposed(by: disposeBag)
         
         //탭, 유저리스트, 즐겨찾기리스트
         //combineLatest: 그 안에 있는 것들중 하나만 바뀌어도 호출됨
         let cellData: Observable<[UserListCelldata]> = Observable
             .combineLatest(input.tabButtonType,
                            fetchUserList,
-                           favoriteUserList).map { tabButtonType,
+                           favoriteUserList,
+                           allFavoriteUserList).map { [ weak self ] tabButtonType,
                 fetchUserList,
-            favoriteUserList in
-            let cellData: [UserListCelldata] = []
-            
+                favoriteUserList,
+                allFavoriteUserList in
+                var cellData: [UserListCelldata] = []
+                
+                guard let self else { return cellData }
                 //TODO: CellData 생성
-            return cellData
-        }
-        
-        
+                // Tab 타입에 따라 api fetchUserList, favoriteUserList
+                switch tabButtonType {
+                case .api:
+                    let tuple = usecase
+                        .checkFavoriteState(fetchUsers: fetchUserList
+                                            , favoriteUsers: allFavoriteUserList)
+                    let userCellList = tuple.map { user, isFavorite in
+                        UserListCelldata.user(user: user, isFavorite: isFavorite)
+                    }
+                    return userCellList
+                    
+                case .favorite:
+                    let dict = usecase.convertListToDictionary(favoriteUsers: favoriteUserList)
+                    let keys = dict.keys.sorted() // key: [userList]
+                    keys.forEach { key in
+                        cellData.append(.header(key))
+                        if let users = dict[key] {
+                            cellData += users.map { UserListCelldata.user(user: $0, isFavorite: true) }
+                        }
+                    }
+                    return cellData
+                }
+            }
         return Output(cellData: cellData, error: error.asObservable())
         
     }
