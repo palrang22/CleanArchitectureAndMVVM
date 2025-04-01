@@ -14,7 +14,7 @@ protocol NetworkManagerProtocol {
 }
 
 
-public class NetworkManager {
+public class NetworkManager: NetworkManagerProtocol {
     
     let apiKey = Bundle.main.infoDictionary?["APIKey"] as! String
     
